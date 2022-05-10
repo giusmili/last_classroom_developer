@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+/* reset css */
+
+html{
+    font-size: 62.5%;
+}
+body{
+    font: 1.6rem 'Open Sans',sans-serif;
+    margin: 0;
+    line-height: 1.6;
+}
+h1,h2,h3{
+    font-weight: 300;
+    margin: 0;
+}
+p,figure,ul,ol{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+*{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #222;
+}
+img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    object-fit: cover;
+}
+button{
+    background-color: transparent;
+    border: 0;
+}
+/*
+    theme
+*/
+*{
+    /* For FF and non-webkit browsers */
+    scrollbar-width: thin;
+    scrollbar-color: #000 #FFF;
+}
+*::-webkit-scrollbar {
+    width: .2rem;
+}
+*::-webkit-scrollbar-thumb {
+    background-color: #222;
+    outline: .1rem solid #333;
+}
+:root{
+    --color-default:  #292F33;
+    --color-primary: #55ACEE;
+    --color-secondary: #66757F;
+    --color-block: #CCD6DD;
+    --color-last-bg: #fff;
+}
+body{
+    background-color: var(--color-secondary);
+}
+header{
+    background-color: var(--color-default);
+}
+header h1{
+    line-height: 6.5rem;
+    color: var(--color-last-bg);
+    text-align: center;
+    padding: 2rem 0;
+}
+header h1::before{
+  content: url(../asset/textxjavascript_103696.png);
+  vertical-align:  -1rem;
+}
+section{
+    max-width: 80rem;
+    margin: 2rem auto;
+    background-color: #fff;
+    padding: 1rem;
+}
+section h2{
+    background-color: var(--color-default);
+    color: var(--color-last-bg);
+    padding: .5rem;
+}
+.desappear{
+    display: none;
+}
+.appear{
+    display: block;
+}
+section ul li{
+    text-transform: capitalize;
+}
+footer{
+    text-align: center;
+    cursor: pointer;
+}
